@@ -1,12 +1,52 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>DriveShare Preview</title>
-<link rel="stylesheet" href="style.css">
-</head><body>
-<div id="stage"><img id="shot" alt="DriveShare page preview" draggable="false"><div id="spots"></div></div>
-<div class="note">Design preview - not a live website</div>
-<div id="toast">Preview only</div>
-<script src="app.js"></script>
-</body></html>
+<title>Drive Today, Share Tomorrow | DriveShare</title>
+<meta name="description" content="Rent cars from trusted local owners or list your own car and start earning.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a5cff'/%3E%3Cpath d='M6 19l2.2-6.2h15.6L26 19v4H6z' fill='%23fff'/%3E%3Ccircle cx='11' cy='23' r='2.6' fill='%230a5cff' stroke='%23fff' stroke-width='1.6'/%3E%3Ccircle cx='21' cy='23' r='2.6' fill='%230a5cff' stroke='%23fff' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home" data-layout="public" data-nav="home">
+<main id="main">
+<section class="hero"><div class="sky" aria-hidden="true"></div><div class="wrap in">
+<div class="eyebrow">PEER-TO-PEER CAR RENTAL</div>
+<h1>Drive Today,<br><em>Share</em> Tomorrow</h1>
+<p class="lead">Rent cars from trusted local owners or list your own car and start earning. Safe. Flexible. Affordable.</p>
+<div class="badge-fm" aria-hidden="true"><i><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14M21 3l-7 18-4-7-7-4z"/></svg></i><span>Freedom<br>to Move</span></div>
+<div class="stab">
+<div class="tabs" role="tablist" aria-label="What would you like to do?">
+<button class="t on" role="tab" aria-selected="true" data-t="rent"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16H3v-5l2-5h14l2 5v5h-2M5 16a2 2 0 104 0m6 0a2 2 0 104 0M5 11h14M9 16h6"/></svg>Rent a Car</button>
+<button class="t" role="tab" aria-selected="false" data-t="list"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8zM7.5 8.5h.01"/></svg>List Your Car</button>
+<button class="t" role="tab" aria-selected="false" data-t="manage"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></svg>Manage Booking</button></div>
+<div class="sb" id="sb-rent"><form class="sbox" id="sbox" novalidate></form></div>
+<div class="sb" id="sb-list" hidden><form class="sbox" id="listform" novalidate style="grid-template-columns:1.4fr 1fr auto"><div class="fld"><label>Car make &amp; model</label><input class="inp" name="make" placeholder="e.g. Toyota Corolla"></div><div class="fld"><label>Daily price (USD)</label><input class="inp" name="price" type="number" placeholder="60"></div><button class="btn pri sbtn" type="submit">Continue <svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form></div>
+<div class="sb" id="sb-manage" hidden><form class="sbox" id="manage" novalidate style="grid-template-columns:1.2fr 1.2fr auto"><div class="fld"><label>Booking reference</label><input class="inp" name="ref" placeholder="e.g. DS-2841"></div><div class="fld"><label>Last name</label><input class="inp" name="ln" placeholder="Samir"></div><button class="btn pri sbtn" type="submit">Find booking <svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form></div>
+</div>
+<div class="feats">
+<div class="feat"><i><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></i><div><b>Verified Owners</b><small>Trusted and verified listings</small></div></div>
+<div class="feat"><i><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M16 7.5C16 6 14.2 5 12 5s-4 1-4 2.8c0 4.2 8 2.2 8 6.4 0 1.7-1.8 2.8-4 2.8s-4-1.1-4-2.6"/></svg></i><div><b>Affordable Prices</b><small>Great deals, no hidden fees</small></div></div>
+<div class="feat"><i><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></svg></i><div><b>Flexible Booking</b><small>Hourly, daily or weekly</small></div></div>
+<div class="feat"><i><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a3.5 3.5 0 100-7 3.5 3.5 0 000 7zM2 20c0-3.5 3-5.5 7-5.5s7 2 7 5.5M17 4.5a3.5 3.5 0 010 6.5M19 14.5c2 .7 3 2.2 3 5.5"/></svg></i><div><b>Wide Selection</b><small>From economy to luxury</small></div></div></div>
+</div></section>
+<section class="sec" style="background:#f4f7fd;border-radius:30px 30px 0 0;margin-top:-26px;position:relative"><div class="wrap">
+<div class="sh"><div><div class="ey">POPULAR CARS</div><h2>Explore Our Top Cars</h2><p>Handpicked cars from trusted owners, ready for your next journey.</p></div>
+<div class="sp"><div class="chips" id="chips"><button class="chip on" data-c="All" aria-pressed="true">All</button><button class="chip" data-c="Economy" aria-pressed="false">Economy</button><button class="chip" data-c="SUV" aria-pressed="false">SUV</button><button class="chip" data-c="Luxury" aria-pressed="false">Luxury</button><button class="chip" data-c="Family" aria-pressed="false">Family</button></div><a class="lnk" href="cars.html">View All Cars <svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+<div class="car-scroll"><div class="cscroll" id="cs"></div><button class="cnext" id="cnext" aria-label="Next cars"><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div>
+</div></section>
+<section class="sec white"><div class="wrap"><div class="sh"><div><div class="ey">HOW IT WORKS</div><h2>Rent a car in three easy steps</h2><p>From search to keys in hand - it only takes a few minutes.</p></div><div class="sp"><a class="lnk" href="how-it-works.html">Learn more <svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+<div class="steps"><div class="card step"><i><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 18a7 7 0 100-14 7 7 0 000 14zM21 21l-5-5"/></svg></i><span class="n">STEP 1</span><h3>Search &amp; compare</h3><p>Pick your city and dates, then filter by type, price, transmission and more.</p></div><div class="card step"><i><svg class="ic lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></svg></i><span class="n">STEP 2</span><h3>Book in minutes</h3><p>Send a request. The owner confirms - usually within an hour.</p></div><div class="card step"><i><svg class="ic lg" viewBox="0 0 24 24"><path d="M15 7a4 4 0 11-3.8 5.2L4 19v-3h3v-3h3l1.2-1.2A4 4 0 0115 7z"/></svg></i><span class="n">STEP 3</span><h3>Pick up &amp; drive</h3><p>Meet the owner, check the car together and enjoy your trip.</p></div></div></div></section>
+<section class="sec"><div class="wrap"><div class="stats4"><div><b>120+</b><span>Cars available</span></div><div><b>4.8</b><span>Average rating</span></div><div><b>24/7</b><span>Customer support</span></div><div><b>7 cities</b><span>Across Egypt</span></div></div></div></section>
+<section class="sec white"><div class="wrap"><div class="sh"><div><div class="ey">LOVED BY RENTERS</div><h2>What our community says</h2></div></div><div class="tgrid">
+<div class="card tm"><div class="stars"><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg></div><p style="margin-top:10px">"Booked a BMW for the weekend - the owner was friendly and the whole thing took five minutes."</p><div class="w"><span class="av s" style="background:linear-gradient(135deg,#3b82f6,#7c3aed)">MA</span><div><b>Mostafa A.</b><small>Cairo</small></div></div></div>
+<div class="card tm"><div class="stars"><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg></div><p style="margin-top:10px">"I list my Tesla when I travel and it pays for itself. Requests are easy to manage."</p><div class="w"><span class="av s" style="background:linear-gradient(135deg,#10b981,#0ea5e9)">SA</span><div><b>Sara A.</b><small>Car owner</small></div></div></div>
+<div class="card tm"><div class="stars"><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg><svg class="ic f sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.3 1.2 6.2L12 17l-5.6 3 1.2-6.2L3 9.5l6.3-.8z"/></svg></div><p style="margin-top:10px">"Great prices compared to agencies, and the support chat actually answers."</p><div class="w"><span class="av s" style="background:linear-gradient(135deg,#f97316,#e11d48)">KM</span><div><b>Karim M.</b><small>Alexandria</small></div></div></div></div></div></section>
+<section class="sec"><div class="wrap"><div class="cta"><div><h2>Have a car sitting idle?</h2><p>List it in minutes and start earning from trusted renters.</p></div><a class="btn lg" href="owners.html">Become an owner <svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div></section>
+</main>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages.js"></script>
+</body>
+</html>
