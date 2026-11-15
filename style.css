@@ -1,0 +1,8 @@
+html,body{margin:0;background:#0b1220;min-height:100%}
+#stage{position:relative;width:100%;max-width:1440px;margin:0 auto;line-height:0}
+#shot{width:100%;height:auto;display:block;user-select:none}
+#spots a{position:absolute;display:block;cursor:pointer;border-radius:6px;-webkit-tap-highlight-color:transparent}
+#spots a:hover{background:rgba(37,99,235,.10)}
+.note{position:fixed;left:10px;bottom:10px;font:12px/1 system-ui,sans-serif;color:#fff;background:rgba(0,0,0,.55);padding:6px 10px;border-radius:14px;pointer-events:none}
+#toast{position:fixed;left:50%;bottom:48px;transform:translateX(-50%);font:14px/1 system-ui,sans-serif;background:#111827;color:#fff;padding:10px 16px;border-radius:8px;opacity:0;transition:opacity .2s;pointer-events:none}
+#toast.on{opacity:1}
